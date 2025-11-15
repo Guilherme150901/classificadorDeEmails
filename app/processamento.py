@@ -95,7 +95,7 @@ def classificacao_alternativa_local(texto_limpo: str) -> Dict[str, str]:
     if any(palavra in texto_limpo for palavra in palavras_chave_produtivas):
         return {
             "categoria": "Produtivo",
-            "resposta": "Obrigado pelo contato! Estamos analisando sua solicitação e retornamos em breve. Guilherme Andrade"
+            "resposta": "Obrigado pelo contato! Estamos analisando sua solicitação e retornamos em breve. Atenciosamente, Guilherme Andrade"
         }
 
     # Caso nenhuma palavra relevante seja encontrada
