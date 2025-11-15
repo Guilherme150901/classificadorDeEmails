@@ -1,0 +1,228 @@
+/* Configurações gerais do site */
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+/* Mantém a mesma fonte em inputs e botões */
+textarea,
+input,
+button {
+  font-family: inherit;
+}
+
+/* Área do topo e título */
+.topo {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.topo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.topo p {
+  color: #555;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* Centraliza o card no centro da página */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card principal do formulário */
+.card {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Espaçamento entre campos do formulário */
+.form .campo {
+  margin-bottom: 18px;
+}
+
+/* Rótulos dos campos */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Área de texto onde o email é digitado */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  resize: vertical;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Destaque ao focar no textarea */
+textarea:focus {
+  border-color: #0066ff;
+  background: #fff;
+}
+
+/* Texto “ou” entre os campos */
+.separador {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+/* Área clicável para enviar arquivo */
+.label-arquivo {
+  border: 2px dashed #c3c3c3;
+  padding: 18px;
+  text-align: center;
+  border-radius: 10px;
+  color: #555;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: 0.2s;
+}
+
+/* Estilo no hover do input de arquivo */
+.label-arquivo:hover {
+  border-color: #0066ff;
+  color: #0066ff;
+}
+
+/* Esconde o input file real */
+.label-arquivo input {
+  display: none;
+}
+
+/* Mostra o nome do arquivo selecionado */
+.nome-arquivo {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 500;
+  font-style: italic;
+  word-break: break-all;
+}
+
+/* Botão de processamento */
+.botao {
+  width: 100%;
+  background: #0066ff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.25s ease;
+}
+
+/* Hover do botão */
+.botao:hover {
+  background: #004fcc;
+}
+
+/* Caixa de resultado que aparece após o processamento */
+.resultado {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f7faff;
+  border: 1px solid #d9e6ff;
+  font-size: 15px;
+  display: none;
+}
+
+.resultado p {
+  margin: 6px 0;
+}
+
+.resultado strong {
+  color: #003399;
+}
+
+/* Estilo da resposta automática */
+.resposta-sugerida {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #0066ff;
+  line-height: 1.6;
+}
+
+/* Caixa que mostra o texto original enviado pelo usuário */
+.texto-original-cliente {
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #444;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Linha de divisão entre seções */
+.linha-divisoria {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 15px 0;
+}
+
+/* Rodapé da página */
+.rodape {
+  text-align: center;
+  padding: 18px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Texto de carregamento */
+.loading {
+  color: #555;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Caixa de erro */
+.erro {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #d8000c;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classificador de Emails IA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1>Classificador de Emails</h1>
+      <p>
+        Envie um texto ou arquivo e receba a análise feita com inteligência
+        artificial da Gemini.
+      </p>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <form id="formEmail" class="form">
+          <div class="campo">
+            <label for="textoEmail">Texto do email</label>
+            <textarea
+              id="textoEmail"
+              name="texto_email"
+              placeholder="Escreva aqui o conteúdo do email..."
+            ></textarea>
+          </div>
+
+          <div class="separador">
+            <span>ou</span>
+          </div>
+
+          <div class="campo">
+            <label class="label-arquivo">
+              <input
+                type="file"
+                id="arquivo"
+                name="arquivo"
+                accept=".txt,.pdf"
+              />
+              Selecionar arquivo (.txt ou .pdf)
+            </label>
+
+            <span id="nome-arquivo-selecionado" class="nome-arquivo"></span>
+          </div>
+
+          <button type="submit" class="botao">Processar</button>
+        </form>
+
+        <div id="resposta" class="resultado"></div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <p>Atividade feita por Guilherme Andrade no processo seletivo da AutoU</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
