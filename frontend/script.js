@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // URL da API FastAPI usada pelo frontend.
 
   // Para deploy no Vercel, esta é a rota a ser usada:
-  // const API_URL = "/api/process"; // Para Vercel (deploy)
+  const API_URL = "/api/process"; // Para Vercel (deploy)
 
   // Para testes locais, a API roda no localhost:
-  const API_URL = "http://localhost:8000/api/process";
+  //const API_URL = "http://localhost:8000/api/process";
 
   // Captura os elementos do formulário e áreas de exibição
   const formEmail = document.getElementById("formEmail");
